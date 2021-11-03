@@ -1,6 +1,7 @@
 % CS-UOB-EXAM
-% by Martijn Stam and Nicolas Wu
-% 2017/2018
+%
+% Created by Martijn Stam, Nicolas Wu (2017-2018)
+% Updated by Alex Kavvos (2021)
 %
 % This class file should come supplied with a Makefile.
 % To compile your exam and answers, type make.
