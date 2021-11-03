@@ -1,6 +1,8 @@
 # uob-cs-exam
 
-University of Bristol CS Exam template. Hopefully compatible with both Windows and *nix.
+University of Bristol CS Exam template. Hopefully compatible with both Windows and *nix
+
+Based on a template first put together by Martijn Stam and Nicolas Wu in 2017-2018.
 
 Requires `xelatex` and `latexmk`. Both come by default with e.g. MikTeX.
 
