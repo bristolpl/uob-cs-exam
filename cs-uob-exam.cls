@@ -31,9 +31,7 @@
 \RequirePackage{color}
 
 %MSM: set up exam.cls to provide correct UoB layout for questions
-\renewcommand\thequestion{
-  {\bfseries Q\arabic{question}}
-}
+\renewcommand\thequestion{{\bfseries Q\arabic{question}}}
 \pointsdroppedatright
 \marksnotpoints
 \marginpointname{ \points}
