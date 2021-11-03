@@ -12,9 +12,10 @@ all : $(exam).pdf $(exam)-answers.pdf
 %-answers.tex : %.tex
 	echo "\\PassOptionsToClass{answers}{exam}" > $*-answers.tex
 	cat $*.tex >> $*-answers.tex
-	
+
 %.pdf : %.tex cs-uob-exam.cls
 	latexmk $*.tex
 
 clean :
-	latexmk -C
+	@latexmk -C 2>/dev/null
+	@rm *-answers.tex *.pdf 2>/dev/null || true
