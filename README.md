@@ -10,7 +10,7 @@ Requires `xelatex` and `latexmk`. Both come by default with e.g. MikTeX.
 
 To compile under Windows, run
 ```
-compile exam.tex
+compile.bat exam.tex
 ````
 where `exam.tex` is the exam file. This will create a file `exam-answers.tex` with solutions printed, and compile both to `pdf`.
 
