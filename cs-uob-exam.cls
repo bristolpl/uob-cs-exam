@@ -77,14 +77,14 @@
     {
       \large\bfseries
       UNIVERSITY OF BRISTOL\\[5mm]
-      \When~\Year\ Examination Period\\[5mm]
+      \When~Examination Period\\[5mm]
       \Dept
     }
     \vspace*{15mm}
 
     {
     \large\bfseries
-    Examination for the Degrees of\\
+    \Year~Examination for the Degrees of\\
     \Degrees
     }
 
