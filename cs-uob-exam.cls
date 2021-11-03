@@ -1,4 +1,4 @@
-% CS-UOB-EXAM
+% UOB-CS-EXAM
 %
 % Created by Martijn Stam, Nicolas Wu (2017-2018).
 % Updated by Alex Kavvos (2021)
@@ -19,7 +19,7 @@
 % when no more reruns are required.*
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cs-uob-exam}[2017/02/06 UoB CS LaTeX class]
+\ProvidesClass{cs-uob-exam}[2021/11/03 UoB CS Exam LaTeX class]
 \LoadClass[12pt,addpoints]{exam}
 
 %MSM: loading package to ease layout etc.
