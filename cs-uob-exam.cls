@@ -26,11 +26,11 @@
 % \usepackage{cmbright}
 \usepackage{mlmodern}
 \usepackage[T1]{fontenc}
-\RequirePackage{soul}			% MSM: to underline text
-\RequirePackage{fmtcount}		% MSM: to convert numbers into text
-\RequirePackage{color}
+\RequirePackage{soul}			% to underline text
+\RequirePackage{fmtcount}	% to convert numbers into text
+\RequirePackage[dvipsnames]{xcolor}
 
-%MSM: set up exam.cls to provide correct UoB layout for questions
+% set up exam.cls to provide correct UoB layout for questions
 \renewcommand\thequestion{{\bfseries Q\arabic{question}}}
 \pointsdroppedatright
 \marksnotpoints
@@ -38,7 +38,7 @@
 \pointformat{[\themarginpoints]}
 \setlength{\rightpointsmargin}{2.4cm}
 
-%MSM: set up exam.cls to provide correct UoB page layout
+% set up exam.cls to provide correct UoB page layout
 \pagestyle{headandfoot}
 \lhead{\ifcontinuation{\oddeven{}{(cont.)}}{}}
 \chead{}
@@ -61,6 +61,7 @@
   }
 }
 
+% Colour parameters (incl. for solutions)
 \CorrectChoiceEmphasis{\color{red}\bfseries}
 \shadedsolutions
 \definecolor{SolutionColor}{rgb}{1,0.9,0.9}
@@ -110,7 +111,7 @@
     \vspace*{10mm}
 
     \ifprintanswers
-      {\Large\bfseries\color{red} Answers to \Coms: \Name}
+      {\Large\bfseries\color{Red}Answers}
 
       \vspace*{10mm}
 
@@ -134,6 +135,8 @@
         {\Rubrik}
         \fi
       }
+
+    \fi
 
     \vspace*{15mm}
 
