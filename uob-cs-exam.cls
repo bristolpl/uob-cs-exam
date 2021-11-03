@@ -31,11 +31,12 @@
 \RequirePackage[dvipsnames]{xcolor}
 
 % set up exam.cls to provide correct UoB layout for questions
-\renewcommand\thequestion{{\bfseries Q\arabic{question}}}
-\pointsdroppedatright
 \marksnotpoints
 \marginpointname{ \points}
-\pointformat{[\themarginpoints]}
+%\renewcommand\thequestion{{\bfseries Q\arabic{question}}}
+\qformat{\textbf{Question~\thequestion} (\totalpoints~\points) \hfill}
+\pointsdroppedatright
+\pointformat{(\themarginpoints)}
 \setlength{\rightpointsmargin}{2.4cm}
 
 % set up exam.cls to provide correct UoB page layout
