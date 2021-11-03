@@ -31,11 +31,13 @@
 \RequirePackage{color}
 
 %MSM: set up exam.cls to provide correct UoB layout for questions
-\renewcommand\thequestion{{{\bfseries Q\arabic{question}}}}
+\renewcommand\thequestion{
+  {\bfseries Q\arabic{question}}
+}
 \pointsdroppedatright
 \marksnotpoints
 \marginpointname{ \points}
-\pointformat{{\itshape[\themarginpoints]}}
+\pointformat{[\themarginpoints]}
 \setlength{\rightpointsmargin}{2.4cm}
 
 %MSM: set up exam.cls to provide correct UoB page layout
@@ -45,23 +47,27 @@
 \rhead{\ifcontinuation{\oddeven{(cont.)}{}}{}}
 \lfoot{}
 \cfoot{{\bfseries Page \thepage\ of \numpages}}
-\rfoot[]{{\bfseries \iflastpage{
-\vfill
-\begin{center}
-{\large\bfseries
-END OF PAPER
+\rfoot[]{
+  {
+    \bfseries
+    \iflastpage{
+      \vfill
+      \begin{center}
+        {\large\bfseries END OF PAPER}
+      \end{center}
+    }{
+      \ifincomplete%
+      {\oddeven{Turn Over/Qu.~continues \ldots}{Qu.~continues \ldots}}%
+      {\oddeven{Turn Over/\ldots}{}}%
+    }
+  }
 }
-\end{center}
-}{\ifincomplete%
-{\oddeven{Turn Over/Qu.~continues \ldots}{Qu.~continues \ldots}}%
-{\oddeven{Turn Over/\ldots}{}}%
-}}}
 
 \CorrectChoiceEmphasis{\color{red}\bfseries}
 \shadedsolutions
 \definecolor{SolutionColor}{rgb}{1,0.9,0.9}
 
-% flag for online exam
+% Flag for online exam
 \newif\if@online
 \@onlinefalse
 \DeclareOption{online}{\@onlinetrue}
