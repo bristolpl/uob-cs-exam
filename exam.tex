@@ -1,12 +1,17 @@
-\def\When{January}
-\def\Degrees{
-  Bachelor of Engineering \\
-  Master of Engineering
+\def\Dept{
+  Department of Computer Science
 }
+\def\Degrees{
+  Bachelor in Computer Science\\
+  Master of Engineering in Computer Science
+}
+\def\When{January}
 \def\Year{2021}
 \def\Coms{COMS1000xx}
 \def\Name{<Unit name>}
-\def\Time{3 hours}
+\def\Time{3 Hours}
+\def\UploadTime{30 minutes} % if online
+
 \def\Instruct{ % for specific instructions
   \begin{enumerate}
     \item Instruction 1.
@@ -14,11 +19,15 @@
     \item \dots
   \end{enumerate}
 }
-\def\ILO{
-  %
+
+\def\Rubrik{
+  This paper contains \textbf{\numberstringnum\numquestions{}} questions. \\
+  Only \textbf{three} questions will be marked. \\
+  If you attempt a question and do not wish it to be marked, delete it clearly. \\
+  The maximum for this paper is \textbf{\numpoints\ marks}.
 }
 
-\documentclass[online]{cs-uob-exam} % [online] to skip student number instructions
+\documentclass[online]{cs-uob-exam} % [online] to skip in-person instructions
 
 \begin{document}
 
@@ -32,7 +41,7 @@
       Test solution 1.
     \end{solution}
 
-    \question[10] Test question 2b.
+    \question[10] Test question 2.
 
     \begin{solution}
       Test solution 2.
