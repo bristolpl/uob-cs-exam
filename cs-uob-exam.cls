@@ -11,12 +11,12 @@
 % when \maketitle is called, and automatically places an "END OF PAPER"
 % marking at the end.
 
-% NOTE: The exam.cls style will normally require you to run latex several
-% times when compiling final output, since it must calculate the number of
-% questions and associated marks. If you do not run latex enough times, the
-% marks may be incorrectly calculated. *It is recommended that you use
-% latexmk to do this, as it will automatically run latex for you, and detect
-% when no more reruns are required.*
+% NOTE: The cs-uob-exam.cls style will normally require you to run LaTeX
+% several times when compiling final output, since it must calculate the
+% number of questions and associated marks. If you do not run LaTeX enough
+% times, the marks may be incorrectly calculated. **It is strongly
+% recommended that you use latexmk to do this, as it will automatically run
+% latex for you, and detect when no more reruns are required.**
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cs-uob-exam}[2021/11/03 UoB CS Exam LaTeX class]
