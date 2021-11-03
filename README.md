@@ -1,6 +1,6 @@
 # uob-cs-exam
 
-University of Bristol CS Exam template. Hopefully compatible with both Windows and *nix
+University of Bristol CS Exam template. Hopefully compatible with both Windows and Linux/Unix.
 
 Based on a template first put together by Martijn Stam and Nicolas Wu in 2017-2018.
 
@@ -12,13 +12,15 @@ To compile under Windows, run
 ```
 compile exam.tex
 ````
-where `exam.tex` is the exam file. This will create a file `exam-answers.tex` with solutions included, and compile both to `pdf`.
+where `exam.tex` is the exam file. This will create a file `exam-answers.tex` with solutions printed, and compile both to `pdf`.
 
-## *nix
+## Linux/Unix
 
-To compile on a *nix system, run
+To compile on a Linux/Unix system, run
 ```
 make exam.tex
 make exam-answers.tex
 ```
-where `exam.tex` is the exam file.
+where `exam.tex` is the exam file. This will create a file `exam-answers.tex` with solutions printed, and compile both to `pdf`.
+
+Currently `make all` runs the above two commands, i.e. assumes that `exam.tex` is the source file in use.
