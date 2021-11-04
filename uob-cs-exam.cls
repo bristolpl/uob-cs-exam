@@ -19,7 +19,7 @@
 % latex for you, and detect when no more reruns are required.**
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cs-uob-exam}[2021/11/03 UoB CS Exam LaTeX class]
+\ProvidesClass{uob-cs-exam}[2021/11/04 UoB CS Exam LaTeX class]
 \LoadClass[12pt,addpoints]{exam}
 
 %MSM: loading package to ease layout etc.
