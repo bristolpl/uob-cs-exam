@@ -19,8 +19,23 @@
 % latex for you, and detect when no more reruns are required.**
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uob-cs-exam}[2021/11/04 UoB CS Exam LaTeX class]
-\LoadClass[12pt,addpoints]{exam}
+\ProvidesClass{uob-cs-exam}[2022/11/02 UoB CS Exam LaTeX class]
+
+%% OPTIONS
+
+%%% Flag for online exam instructions.
+\newif\if@online
+\@onlinefalse
+\DeclareOption{online}{\@onlinetrue}
+
+%%% Pass unknown options to exam.
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{exam}}
+
+\ProcessOptions\relax
+%% END OF OPTIONS
+
+% load the exam class
+\LoadClass[12pt, addpoints]{exam}
 
 %MSM: loading package to ease layout etc.
 % \usepackage{cmbright}
@@ -66,12 +81,6 @@
 \CorrectChoiceEmphasis{\color{red}\bfseries}
 \shadedsolutions
 \definecolor{SolutionColor}{rgb}{1,0.9,0.9}
-
-% Flag for online exam
-\newif\if@online
-\@onlinefalse
-\DeclareOption{online}{\@onlinetrue}
-\ProcessOptions\relax
 
 \renewcommand\maketitle{
 
