@@ -1,7 +1,7 @@
 % UOB-CS-EXAM
 %
 % Created by Martijn Stam, Nicolas Wu (2017-2018).
-% Updated by Alex Kavvos (2021)
+% Updated by Alex Kavvos (2021-2023)
 %
 % You should also be given a template exam.tex which will serve as a model
 % for your exam.
@@ -19,7 +19,7 @@
 % latex for you, and detect when no more reruns are required.**
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uob-cs-exam}[2022/10/24 UoB CS Exam LaTeX class]
+\ProvidesClass{uob-cs-exam}[2023/10/17 UoB CS Exam LaTeX class]
 \LoadClass[12pt,addpoints]{exam}
 
 %MSM: loading package to ease layout etc.
@@ -129,8 +129,8 @@
       % Rubric generation
       {
         \ifx\Rubrik\undefined
-        This paper contains \textbf{\numberstringnum\numquestions{}} questions. \\
-        \textbf{All} answers will be used for assessment. \\
+        This paper contains \textbf{\numquestions} questions. \\
+        \textbf{All} answers will be marked. \\
         The maximum for this paper is \textbf{\numpoints\ marks}.\\[5mm]
         \else
         {\Rubrik}
