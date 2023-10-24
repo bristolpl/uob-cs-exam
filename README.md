@@ -4,7 +4,7 @@ University of Bristol CS Exam template. Hopefully compatible with both Windows a
 
 Based on a template first put together by Martijn Stam and Nicolas Wu in 2017/18.
 
-Cover page ('rubric page') prepared according to 2022/23 regulations given by the exams office at
+Cover page ('rubric page') prepared according to 2023/24 regulations given by the exams office at
 
   http://www.bristol.ac.uk/directory/exams/staff/exam-papers/
 
@@ -19,7 +19,7 @@ questions to work
 * we must use `xelatex`
 * we must use force mode (`-f`)
 
-All of these will be automatically picked up by the script from the
+All of these will be automatically picked up by the `latexmk` script from the
 `latexmkrc` file.
 
 ## On `mlmodern`
@@ -45,7 +45,7 @@ e.g. by inserting a `%` before it.
 
 To compile under Windows, run
 ```
-compile.bat exam.tex
+build.ps1 exam.tex
 ```
 where `exam.tex` is the exam file. This will create a file `exam-answers.tex`
 with solutions printed, and compile both to `pdf`.

@@ -19,7 +19,7 @@
 % latex for you, and detect when no more reruns are required.**
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uob-cs-exam}[2022/11/02 UoB CS Exam LaTeX class]
+\ProvidesClass{uob-cs-exam}[2023/10/24 UoB CS Exam LaTeX class]
 
 %% OPTIONS
 
